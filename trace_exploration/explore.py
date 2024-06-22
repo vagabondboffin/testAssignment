@@ -11,3 +11,4 @@ def read_traces(file):
 if __name__ == "__main__":
     df = read_traces("./traces/trace_get_all_cats.json")
     print(df.head())
+print("end")
