@@ -2,7 +2,7 @@
     "data": [
         {
             "traceID": "254213cdd6fe59d252214d867d1765a0",
-            "spans": [
+            "spans":[
                 {
                     "traceID": "254213cdd6fe59d252214d867d1765a0",
                     "spanID": "f813954871245470",

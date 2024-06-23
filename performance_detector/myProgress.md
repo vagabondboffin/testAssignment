@@ -24,3 +24,18 @@ Set up the development environment, explored the API, and reviewed traces in Jae
 
 ### Summary:
 Focused on understanding tracing and monitoring tools, collected traces for analysis
+
+---
+## Day 3: Designing and Implementing the Tool (June 23, 2024 - Sunday)
+
+### Tasks Completed:
+- Decided on the structure of the tool.
+- Implemented two files in the `data_processing` subdirectory to handle JSON trace files: `trace_parser.py` and `trace_elements.py`.
+- Developed two kinds of issue detectors: 
+  - `N+1 queries detector`
+  - `Duplicate span ID detector`
+
+### Summary:
+Designed the tool's structure and implemented core components for processing trace files and detecting specific issues.
+
+---
