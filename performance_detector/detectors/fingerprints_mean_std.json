@@ -1,0 +1,14 @@
+{
+    "client": {
+        "mean_latency": 902.3358035147152,
+        "std_latency": 14638.50811785262
+    },
+    "server": {
+        "mean_latency": 6610.724217844728,
+        "std_latency": 23617.911305938516
+    },
+    "internal": {
+        "mean_latency": 2100.5791040544373,
+        "std_latency": 44813.520041608965
+    }
+}

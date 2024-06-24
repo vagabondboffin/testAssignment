@@ -1,0 +1,20 @@
+{
+    "client": {
+        "median_latency": 138.0,
+        "iqr_latency": 172.0,
+        "lower_bound": -164.0,
+        "upper_bound": 524.0
+    },
+    "server": {
+        "median_latency": 758.0,
+        "iqr_latency": 227.5,
+        "lower_bound": 330.25,
+        "upper_bound": 1240.25
+    },
+    "internal": {
+        "median_latency": 213.0,
+        "iqr_latency": 224.0,
+        "lower_bound": -186.0,
+        "upper_bound": 710.0
+    }
+}

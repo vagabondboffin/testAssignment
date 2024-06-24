@@ -4,8 +4,8 @@ import datetime
 import signal
 
 # Define the services you want to monitor
-#SERVICES_TO_MONITOR = ['cat-api', 'cat-recommender-api', 'otel_collector', 'grafana']
-SERVICES_TO_MONITOR = ['cat-api']
+SERVICES_TO_MONITOR = ['cat-api', 'cat-recommender-api', 'otel_collector', 'grafana', 'cat-api-postgres', 'prometheus', 'jaeger']
+#SERVICES_TO_MONITOR = ['cat-api']
 # Buffer to store logs temporarily
 log_buffer = []
 

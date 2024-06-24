@@ -38,7 +38,7 @@ def save_traces(traces, service_name):
 
 
 # Retry logic to ensure traces are available
-service_name = "cat-api"  # Specify the service name
+service_name = "cat-recommender-api"  # Specify the service name
 for _ in range(5):  # Retry up to 5 times
     traces = fetch_traces(service_name)
     if traces and traces.get('data'):

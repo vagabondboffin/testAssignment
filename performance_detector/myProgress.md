@@ -39,3 +39,16 @@ Focused on understanding tracing and monitoring tools, collected traces for anal
 Designed the tool's structure and implemented core components for processing trace files and detecting specific issues.
 
 ---
+## Day 3: Deeper into Traces and Logs (June 24, 2024 - Monday)
+- Developed `large_http_payload_detector.py` to detect the Large HTTP Payload problem. 
+- I started digging deeper into traces. I wanted to mark traces with high latency, but I noticed that "high" is very different when working with different kind of spans. So started making fingerprints based on each `span.kind`.
+Using mean and standard deviation was useless because the std value was very high, indicating that there is a wide dispersion in the data, making it difficult to use mean ± std for anomaly detection.   
+- So, I made fingerprints using Median and Interquartile Range (IQR) method and implemented an anomaly detector that uses these fingerprints.
+- Developed `exception_trace_detector.py` to find traces that are countering an exception.
+- Developed `log_parser.py` in the `data_processing` subdirectory to make senses of the logs and the runtime information. The implemented function would monitor logs, label them with services, and one of the labels below, saved in .txt files. 
+  - exception
+  - warning 
+  - error 
+  - 500 Internal Server Error
+  - info 
+  - other
