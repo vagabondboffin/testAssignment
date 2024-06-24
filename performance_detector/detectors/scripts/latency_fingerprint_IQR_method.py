@@ -73,5 +73,5 @@ if __name__ == "__main__":
     path3 = "A:\py\pythonProjects\\testAssignment\\trace_exploration\\traces\\trace_get_all_cats.json"
     path4 = "A:\py\pythonProjects\\testAssignment\\trace_exploration\\traces\\trace_generate_pairs.json"
     json_file_paths = [path1, path2, path3, path4]
-    output_file_path = "/performance_detector/detectors/necessary_files/fingerprints_IQR.json"
+    output_file_path = "/performance_detector/detectors/files/fingerprints_IQR.json"
     main(json_file_paths, output_file_path)
