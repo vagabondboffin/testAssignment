@@ -1,0 +1,483 @@
+[
+    {
+        "trace_id": "0ddf9f1456e21cee5bd41e0313be3340",
+        "anomalies": [
+            {
+                "span_id": "17b0a26fbd4732a3",
+                "operation_name": "POST /api/cats/pairs",
+                "kind": "server",
+                "duration": 43805,
+                "description": "Anomalous server span detected"
+            },
+            {
+                "span_id": "0f28ad0d7bd55254",
+                "operation_name": "CatController.generatePairs",
+                "kind": "internal",
+                "duration": 35687,
+                "description": "Anomalous internal span detected"
+            },
+            {
+                "span_id": "c314364a454e472f",
+                "operation_name": "CatService.suggestCat",
+                "kind": "internal",
+                "duration": 6678,
+                "description": "Anomalous internal span detected"
+            },
+            {
+                "span_id": "2d94e998be43b065",
+                "operation_name": "CatRepository.findAllWithLimit",
+                "kind": "internal",
+                "duration": 2216,
+                "description": "Anomalous internal span detected"
+            },
+            {
+                "span_id": "b6d16b14450b77a3",
+                "operation_name": "CatService.suggestCat",
+                "kind": "internal",
+                "duration": 9577,
+                "description": "Anomalous internal span detected"
+            },
+            {
+                "span_id": "47eaf7548c1c1ebd",
+                "operation_name": "CatBreedRepository.findById",
+                "kind": "internal",
+                "duration": 3035,
+                "description": "Anomalous internal span detected"
+            },
+            {
+                "span_id": "9b78d6137381ca97",
+                "operation_name": "POST",
+                "kind": "client",
+                "duration": 2594,
+                "description": "Anomalous client span detected"
+            },
+            {
+                "span_id": "b9a8eedced81b155",
+                "operation_name": "CatBreedRepository.findById",
+                "kind": "internal",
+                "duration": 2297,
+                "description": "Anomalous internal span detected"
+            },
+            {
+                "span_id": "437e583a128b057f",
+                "operation_name": "POST",
+                "kind": "client",
+                "duration": 3149,
+                "description": "Anomalous client span detected"
+            },
+            {
+                "span_id": "7bb6f267e636a348",
+                "operation_name": "SELECT cats.CAT",
+                "kind": "client",
+                "duration": 681,
+                "description": "Anomalous client span detected"
+            },
+            {
+                "span_id": "b7d8f27d6725e8f7",
+                "operation_name": "SELECT cats.cat_breed",
+                "kind": "client",
+                "duration": 1110,
+                "description": "Anomalous client span detected"
+            },
+            {
+                "span_id": "a76f852dd2e8acd2",
+                "operation_name": "SELECT cats.cat_breed",
+                "kind": "client",
+                "duration": 903,
+                "description": "Anomalous client span detected"
+            },
+            {
+                "span_id": "36a6b02aa250e0f9",
+                "operation_name": "CatBreedRepository.findById",
+                "kind": "internal",
+                "duration": 2212,
+                "description": "Anomalous internal span detected"
+            },
+            {
+                "span_id": "15079fc84a653df2",
+                "operation_name": "CatBreedRepository.findById",
+                "kind": "internal",
+                "duration": 4352,
+                "description": "Anomalous internal span detected"
+            },
+            {
+                "span_id": "1a850df21081321f",
+                "operation_name": "CatBreedRepository.findById",
+                "kind": "internal",
+                "duration": 2905,
+                "description": "Anomalous internal span detected"
+            },
+            {
+                "span_id": "7bbf875a699ef2fa",
+                "operation_name": "SELECT cats.cat_breed",
+                "kind": "client",
+                "duration": 577,
+                "description": "Anomalous client span detected"
+            },
+            {
+                "span_id": "c14545a7f53f578b",
+                "operation_name": "SELECT cats.cat_breed",
+                "kind": "client",
+                "duration": 1231,
+                "description": "Anomalous client span detected"
+            },
+            {
+                "span_id": "17b0a26fbd4732a3",
+                "operation_name": "POST /api/cats/pairs",
+                "kind": "server",
+                "duration": 43805,
+                "description": "Anomalous server span detected"
+            },
+            {
+                "span_id": "0f28ad0d7bd55254",
+                "operation_name": "CatController.generatePairs",
+                "kind": "internal",
+                "duration": 35687,
+                "description": "Anomalous internal span detected"
+            },
+            {
+                "span_id": "c314364a454e472f",
+                "operation_name": "CatService.suggestCat",
+                "kind": "internal",
+                "duration": 6678,
+                "description": "Anomalous internal span detected"
+            },
+            {
+                "span_id": "2d94e998be43b065",
+                "operation_name": "CatRepository.findAllWithLimit",
+                "kind": "internal",
+                "duration": 2216,
+                "description": "Anomalous internal span detected"
+            },
+            {
+                "span_id": "b6d16b14450b77a3",
+                "operation_name": "CatService.suggestCat",
+                "kind": "internal",
+                "duration": 9577,
+                "description": "Anomalous internal span detected"
+            },
+            {
+                "span_id": "47eaf7548c1c1ebd",
+                "operation_name": "CatBreedRepository.findById",
+                "kind": "internal",
+                "duration": 3035,
+                "description": "Anomalous internal span detected"
+            },
+            {
+                "span_id": "9b78d6137381ca97",
+                "operation_name": "POST",
+                "kind": "client",
+                "duration": 2594,
+                "description": "Anomalous client span detected"
+            },
+            {
+                "span_id": "b9a8eedced81b155",
+                "operation_name": "CatBreedRepository.findById",
+                "kind": "internal",
+                "duration": 2297,
+                "description": "Anomalous internal span detected"
+            },
+            {
+                "span_id": "437e583a128b057f",
+                "operation_name": "POST",
+                "kind": "client",
+                "duration": 3149,
+                "description": "Anomalous client span detected"
+            },
+            {
+                "span_id": "7bb6f267e636a348",
+                "operation_name": "SELECT cats.CAT",
+                "kind": "client",
+                "duration": 681,
+                "description": "Anomalous client span detected"
+            },
+            {
+                "span_id": "b7d8f27d6725e8f7",
+                "operation_name": "SELECT cats.cat_breed",
+                "kind": "client",
+                "duration": 1110,
+                "description": "Anomalous client span detected"
+            },
+            {
+                "span_id": "a76f852dd2e8acd2",
+                "operation_name": "SELECT cats.cat_breed",
+                "kind": "client",
+                "duration": 903,
+                "description": "Anomalous client span detected"
+            },
+            {
+                "span_id": "36a6b02aa250e0f9",
+                "operation_name": "CatBreedRepository.findById",
+                "kind": "internal",
+                "duration": 2212,
+                "description": "Anomalous internal span detected"
+            },
+            {
+                "span_id": "15079fc84a653df2",
+                "operation_name": "CatBreedRepository.findById",
+                "kind": "internal",
+                "duration": 4352,
+                "description": "Anomalous internal span detected"
+            },
+            {
+                "span_id": "1a850df21081321f",
+                "operation_name": "CatBreedRepository.findById",
+                "kind": "internal",
+                "duration": 2905,
+                "description": "Anomalous internal span detected"
+            },
+            {
+                "span_id": "7bbf875a699ef2fa",
+                "operation_name": "SELECT cats.cat_breed",
+                "kind": "client",
+                "duration": 577,
+                "description": "Anomalous client span detected"
+            },
+            {
+                "span_id": "c14545a7f53f578b",
+                "operation_name": "SELECT cats.cat_breed",
+                "kind": "client",
+                "duration": 1231,
+                "description": "Anomalous client span detected"
+            },
+            {
+                "span_id": "17b0a26fbd4732a3",
+                "operation_name": "POST /api/cats/pairs",
+                "kind": "server",
+                "duration": 43805,
+                "description": "Anomalous server span detected"
+            },
+            {
+                "span_id": "0f28ad0d7bd55254",
+                "operation_name": "CatController.generatePairs",
+                "kind": "internal",
+                "duration": 35687,
+                "description": "Anomalous internal span detected"
+            },
+            {
+                "span_id": "c314364a454e472f",
+                "operation_name": "CatService.suggestCat",
+                "kind": "internal",
+                "duration": 6678,
+                "description": "Anomalous internal span detected"
+            },
+            {
+                "span_id": "2d94e998be43b065",
+                "operation_name": "CatRepository.findAllWithLimit",
+                "kind": "internal",
+                "duration": 2216,
+                "description": "Anomalous internal span detected"
+            },
+            {
+                "span_id": "b6d16b14450b77a3",
+                "operation_name": "CatService.suggestCat",
+                "kind": "internal",
+                "duration": 9577,
+                "description": "Anomalous internal span detected"
+            },
+            {
+                "span_id": "47eaf7548c1c1ebd",
+                "operation_name": "CatBreedRepository.findById",
+                "kind": "internal",
+                "duration": 3035,
+                "description": "Anomalous internal span detected"
+            },
+            {
+                "span_id": "9b78d6137381ca97",
+                "operation_name": "POST",
+                "kind": "client",
+                "duration": 2594,
+                "description": "Anomalous client span detected"
+            },
+            {
+                "span_id": "b9a8eedced81b155",
+                "operation_name": "CatBreedRepository.findById",
+                "kind": "internal",
+                "duration": 2297,
+                "description": "Anomalous internal span detected"
+            },
+            {
+                "span_id": "437e583a128b057f",
+                "operation_name": "POST",
+                "kind": "client",
+                "duration": 3149,
+                "description": "Anomalous client span detected"
+            },
+            {
+                "span_id": "7bb6f267e636a348",
+                "operation_name": "SELECT cats.CAT",
+                "kind": "client",
+                "duration": 681,
+                "description": "Anomalous client span detected"
+            },
+            {
+                "span_id": "b7d8f27d6725e8f7",
+                "operation_name": "SELECT cats.cat_breed",
+                "kind": "client",
+                "duration": 1110,
+                "description": "Anomalous client span detected"
+            },
+            {
+                "span_id": "a76f852dd2e8acd2",
+                "operation_name": "SELECT cats.cat_breed",
+                "kind": "client",
+                "duration": 903,
+                "description": "Anomalous client span detected"
+            },
+            {
+                "span_id": "36a6b02aa250e0f9",
+                "operation_name": "CatBreedRepository.findById",
+                "kind": "internal",
+                "duration": 2212,
+                "description": "Anomalous internal span detected"
+            },
+            {
+                "span_id": "15079fc84a653df2",
+                "operation_name": "CatBreedRepository.findById",
+                "kind": "internal",
+                "duration": 4352,
+                "description": "Anomalous internal span detected"
+            },
+            {
+                "span_id": "1a850df21081321f",
+                "operation_name": "CatBreedRepository.findById",
+                "kind": "internal",
+                "duration": 2905,
+                "description": "Anomalous internal span detected"
+            },
+            {
+                "span_id": "7bbf875a699ef2fa",
+                "operation_name": "SELECT cats.cat_breed",
+                "kind": "client",
+                "duration": 577,
+                "description": "Anomalous client span detected"
+            },
+            {
+                "span_id": "c14545a7f53f578b",
+                "operation_name": "SELECT cats.cat_breed",
+                "kind": "client",
+                "duration": 1231,
+                "description": "Anomalous client span detected"
+            },
+            {
+                "span_id": "17b0a26fbd4732a3",
+                "operation_name": "POST /api/cats/pairs",
+                "kind": "server",
+                "duration": 43805,
+                "description": "Anomalous server span detected"
+            },
+            {
+                "span_id": "0f28ad0d7bd55254",
+                "operation_name": "CatController.generatePairs",
+                "kind": "internal",
+                "duration": 35687,
+                "description": "Anomalous internal span detected"
+            },
+            {
+                "span_id": "c314364a454e472f",
+                "operation_name": "CatService.suggestCat",
+                "kind": "internal",
+                "duration": 6678,
+                "description": "Anomalous internal span detected"
+            },
+            {
+                "span_id": "2d94e998be43b065",
+                "operation_name": "CatRepository.findAllWithLimit",
+                "kind": "internal",
+                "duration": 2216,
+                "description": "Anomalous internal span detected"
+            },
+            {
+                "span_id": "b6d16b14450b77a3",
+                "operation_name": "CatService.suggestCat",
+                "kind": "internal",
+                "duration": 9577,
+                "description": "Anomalous internal span detected"
+            },
+            {
+                "span_id": "47eaf7548c1c1ebd",
+                "operation_name": "CatBreedRepository.findById",
+                "kind": "internal",
+                "duration": 3035,
+                "description": "Anomalous internal span detected"
+            },
+            {
+                "span_id": "9b78d6137381ca97",
+                "operation_name": "POST",
+                "kind": "client",
+                "duration": 2594,
+                "description": "Anomalous client span detected"
+            },
+            {
+                "span_id": "b9a8eedced81b155",
+                "operation_name": "CatBreedRepository.findById",
+                "kind": "internal",
+                "duration": 2297,
+                "description": "Anomalous internal span detected"
+            },
+            {
+                "span_id": "437e583a128b057f",
+                "operation_name": "POST",
+                "kind": "client",
+                "duration": 3149,
+                "description": "Anomalous client span detected"
+            },
+            {
+                "span_id": "7bb6f267e636a348",
+                "operation_name": "SELECT cats.CAT",
+                "kind": "client",
+                "duration": 681,
+                "description": "Anomalous client span detected"
+            },
+            {
+                "span_id": "b7d8f27d6725e8f7",
+                "operation_name": "SELECT cats.cat_breed",
+                "kind": "client",
+                "duration": 1110,
+                "description": "Anomalous client span detected"
+            },
+            {
+                "span_id": "a76f852dd2e8acd2",
+                "operation_name": "SELECT cats.cat_breed",
+                "kind": "client",
+                "duration": 903,
+                "description": "Anomalous client span detected"
+            },
+            {
+                "span_id": "36a6b02aa250e0f9",
+                "operation_name": "CatBreedRepository.findById",
+                "kind": "internal",
+                "duration": 2212,
+                "description": "Anomalous internal span detected"
+            },
+            {
+                "span_id": "15079fc84a653df2",
+                "operation_name": "CatBreedRepository.findById",
+                "kind": "internal",
+                "duration": 4352,
+                "description": "Anomalous internal span detected"
+            },
+            {
+                "span_id": "1a850df21081321f",
+                "operation_name": "CatBreedRepository.findById",
+                "kind": "internal",
+                "duration": 2905,
+                "description": "Anomalous internal span detected"
+            },
+            {
+                "span_id": "7bbf875a699ef2fa",
+                "operation_name": "SELECT cats.cat_breed",
+                "kind": "client",
+                "duration": 577,
+                "description": "Anomalous client span detected"
+            },
+            {
+                "span_id": "c14545a7f53f578b",
+                "operation_name": "SELECT cats.cat_breed",
+                "kind": "client",
+                "duration": 1231,
+                "description": "Anomalous client span detected"
+            }
+        ]
+    }
+]
