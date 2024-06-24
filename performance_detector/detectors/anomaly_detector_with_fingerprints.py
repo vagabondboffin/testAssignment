@@ -65,6 +65,6 @@ def main(trace_files, fingerprint_file_path, output_file_path):
 
 if __name__ == "__main__":
     trace_files = ["A:\py\pythonProjects\\testAssignment\\trace_exploration\\traces\\trace_generate_pairs_with_error.json"]
-    fingerprint_file_path = "A:\py\pythonProjects\\testAssignment\performance_detector\detectors\\fingerprints_IQR.json"
-    output_file_path = "A:\py\pythonProjects\\testAssignment\performance_detector\detectors\\anomalies_detected_with_fingerprint.json"
+    fingerprint_file_path = "/performance_detector/detectors/necessary_files/fingerprints_IQR.json"
+    output_file_path = "/performance_detector/detectors/necessary_files/anomalies_detected_with_fingerprint.json"
     main(trace_files, fingerprint_file_path, output_file_path)

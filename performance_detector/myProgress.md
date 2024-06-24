@@ -35,11 +35,9 @@ Focused on understanding tracing and monitoring tools, collected traces for anal
   - `N+1 queries detector`
   - `Duplicate span ID detector`
 
-### Summary:
-Designed the tool's structure and implemented core components for processing trace files and detecting specific issues.
-
 ---
-## Day 3: Deeper into Traces and Logs (June 24, 2024 - Monday)
+## Day 4: Deeper into Traces and Logs (June 24, 2024 - Monday)
+### Tasks Completed:
 - Developed `large_http_payload_detector.py` to detect the Large HTTP Payload problem. 
 - I started digging deeper into traces. I wanted to mark traces with high latency, but I noticed that "high" is very different when working with different kind of spans. So started making fingerprints based on each `span.kind`.
 Using mean and standard deviation was useless because the std value was very high, indicating that there is a wide dispersion in the data, making it difficult to use mean ± std for anomaly detection.   
