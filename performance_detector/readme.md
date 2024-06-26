@@ -14,11 +14,11 @@ The project is organized into three main subdirectories:
    - `log_parser.py`: Captures logs from different services and Categorizes them.
 
 2. **detectors**
-   - `duplicate_span_id_detector.py`: Detects duplicate span IDs within traces. Identifies and reports spans with duplicate IDs within a trace.
-   - `n_plus_one_detector.py`: Detects N+1 query issues in traces. Detects the N+1 query problem by identifying patterns where a single query is followed by multiple similar queries.
-   - `large_http_payload_detector.py`: Detects spans with large HTTP payloads. Flags spans that contain large HTTP payloads, which can be indicative of performance bottlenecks.
-   - `error_detector.py`: Detects spans containing errors. Identifies spans that contain errors or warnings.
-   - `anomaly_detector_with_fingerprints.py`: Detects anomalies using fingerprinting techniques. Uses fingerprinting techniques to detect anomalous spans based on predefined patterns.
+   - `duplicate_span_id_detector.py`: Detects duplicate span IDs within traces. 
+   - `n_plus_one_detector.py`: Detects N+1 query issues in traces. 
+   - `large_http_payload_detector.py`: Detects spans with large HTTP payloads. F
+   - `error_detector.py`: Detects spans containing errors in a hierarchy manner.
+   - `anomaly_detector_with_fingerprints.py`: Detects anomalies using fingerprinting techniques. 
    - `base_detector.py`: Base class that all detectors inherit from.
 
 3. **machine_learning**
