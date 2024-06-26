@@ -1,0 +1,90 @@
+{
+    "254213cdd6fe59d252214d867d1765a0": [],
+    "0ddf9f1456e21cee5bd41e0313be3340": [
+        {
+            "span_id": "17b0a26fbd4732a3",
+            "operation_name": "POST /api/cats/pairs",
+            "is_http": true,
+            "http_status_code": 500,
+            "code_details": null,
+            "exception_message": null,
+            "children": []
+        },
+        {
+            "span_id": "0f28ad0d7bd55254",
+            "operation_name": "CatController.generatePairs",
+            "is_http": false,
+            "http_status_code": null,
+            "code_details": {},
+            "exception_message": null,
+            "children": [
+                {}
+            ]
+        },
+        {
+            "span_id": "b6d16b14450b77a3",
+            "operation_name": "CatService.suggestCat",
+            "is_http": false,
+            "http_status_code": null,
+            "code_details": {
+                "function": "suggestCat",
+                "namespace": "org.jetbrains.service.CatService"
+            },
+            "exception_message": null,
+            "children": [
+                {}
+            ]
+        },
+        {
+            "span_id": "437e583a128b057f",
+            "operation_name": "POST",
+            "is_http": true,
+            "http_status_code": 500,
+            "code_details": null,
+            "exception_message": null,
+            "children": [
+                {}
+            ]
+        },
+        {
+            "span_id": "bf280d463ffec538",
+            "operation_name": "POST /api/recommend http send",
+            "is_http": true,
+            "http_status_code": 500,
+            "code_details": null,
+            "exception_message": null,
+            "children": [
+                {
+                    "span_id": "8cc997bac4d43bd7",
+                    "operation_name": "POST /api/recommend",
+                    "is_http": true,
+                    "http_status_code": 500,
+                    "code_details": null,
+                    "exception_message": null,
+                    "children": [
+                        {}
+                    ]
+                }
+            ]
+        },
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+    ]
+}

@@ -1,5 +1,5 @@
 from performance_detector.data_processing.trace_elements import Trace, Span, Tag
-from base_detector import BaseDetector
+from performance_detector.detectors.base_detector import BaseDetector
 
 
 class DuplicateSpanIDDetector(BaseDetector):

@@ -3,14 +3,12 @@ import re
 import datetime
 import signal
 
-# Buffer to store logs temporarily
 log_buffer = []
 
 def parse_logs():
     # Command to run Docker services and capture their output
     command = 'docker-compose logs --tail=0 --follow'
 
-    # Start the subprocess to capture real-time logs
     process = subprocess.Popen(command, shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, universal_newlines=True)
 
     try:
@@ -46,7 +44,6 @@ def categorize_log_line(line):
     # Extract the service name from the log line
     service = line.split()[0].rstrip('-1')
 
-    # Define categorization rules based on keywords or patterns
     if re.search(r'exception', line, re.IGNORECASE):
         return 'exception'
     elif re.search(r'error', line, re.IGNORECASE):
@@ -67,14 +64,11 @@ def categorize_log_line(line):
         return 'other'
 
 def process_otel_collector_prometheus_exporter(line):
-    # Extract relevant information from the Prometheus exporter logs
     match = re.search(r'error gathering metrics: collected metric http_server_duration', line)
     if match:
         print("Error gathering http_server_duration metrics in the Prometheus exporter.")
-        # You can add further processing or error handling here
 
 def process_http_server_duration(line, category):
-    # Extract relevant information from the http_server_duration log line
     match = re.search(r'label:\{name:"http_method" value:"(\w+)"\} label:\{name:"http_route" value:"([^"]+)"\} label:\{name:"http_status_code" value:"(\d+)"\} histogram:\{sample_count:(\d+) sample_sum:(\d+\.\d+)', line)
     if match:
         http_method = match.group(1)

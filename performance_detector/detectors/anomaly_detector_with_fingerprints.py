@@ -4,12 +4,13 @@ from performance_detector.data_processing.trace_parser import TraceParser
 from performance_detector.detectors.base_detector import BaseDetector
 
 
-class AnomalyDetector(BaseDetector):
-    def __init__(self, fingerprint_file_path):
+class AnomalyDetectorWithFingerprints(BaseDetector):
+    def __init__(self):
         super().__init__()
-        self.fingerprints = self.load_fingerprints(fingerprint_file_path)
+        self.fingerprints = self.load_fingerprints()
 
-    def load_fingerprints(self, fingerprint_file_path):
+    def load_fingerprints(self):
+        fingerprint_file_path = "A:\py\pythonProjects\\testAssignment\performance_detector\detectors\\files\\fingerprints_IQR.json"
         with open(fingerprint_file_path, 'r') as file:
             return json.load(file)
 
@@ -48,7 +49,7 @@ def main(trace_files, fingerprint_file_path, output_file_path):
     for file_path in trace_files:
         traces.extend(TraceParser.parse_from_file(file_path))
 
-    detector = AnomalyDetector(fingerprint_file_path)
+    detector = AnomalyDetectorWithFingerprints(fingerprint_file_path)
     all_anomalies = []
 
     for trace in traces:
@@ -62,10 +63,6 @@ def main(trace_files, fingerprint_file_path, output_file_path):
     with open(output_file_path, 'w') as file:
         json.dump(all_anomalies, file, indent=4)
 
+    output_file_path = "A:\py\pythonProjects\\testAssignment\performance_detector\detectors\\files\\anomalies_detected_with_fingerprint.json"
     print(f"Anomalies saved to {output_file_path}")
 
-if __name__ == "__main__":
-    trace_files = ["A:\py\pythonProjects\\testAssignment\\trace_exploration\\traces\\trace_generate_pairs_with_error.json"]
-    fingerprint_file_path = "A:\py\pythonProjects\\testAssignment\performance_detector\detectors\\files\\fingerprints_IQR.json"
-    output_file_path = "A:\py\pythonProjects\\testAssignment\performance_detector\detectors\\files\\anomalies_detected_with_fingerprint.json"
-    main(trace_files, fingerprint_file_path, output_file_path)

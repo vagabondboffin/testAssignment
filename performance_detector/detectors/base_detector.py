@@ -18,7 +18,7 @@ class BaseDetector:
                     function = tag.value
 
             if 'namespace' in locals() and 'function' in locals():
-                break  # Stop searching if found in the current span
+                break
 
             # Check references if namespace and function not found in tags
             if 'namespace' not in locals() or 'function' not in locals():
@@ -33,7 +33,7 @@ class BaseDetector:
                                     function = tag.value
 
                             if 'namespace' in locals() and 'function' in locals():
-                                break  # Stop searching if found in parent span
+                                break
 
         return namespace, function
 
@@ -43,3 +43,13 @@ class BaseDetector:
             if span.span_id == span_id:
                 return span
         return None
+
+    def is_http_span(self, span: Span) -> bool:
+        # Check if the span has HTTP-related tags
+        for tag in span.tags:
+            if tag.key in ['http.url', 'http.method', 'http.status_code', 'http.response_content_length']:
+                return True
+        # Check if the operation name contains HTTP methods
+        if any(method in span.operation_name for method in ['GET', 'POST', 'PUT', 'DELETE']):
+            return True
+        return False

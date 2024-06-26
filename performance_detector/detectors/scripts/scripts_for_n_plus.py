@@ -31,7 +31,8 @@ def detect_issues_in_traces(json_file_path):
 
 def main():
     # Example usage with a JSON file of traces
-    json_file_path = '/trace_exploration/traces/trace_generate_pairs_with_error.json'
+    json_file_path = "A:\py\pythonProjects\\testAssignment\\trace_exploration\\traces\cat-api_traces_1719225841.json"
+    # json_file_path = "A:\py\pythonProjects\\testAssignment\\trace_exploration\\traces\\trace_generate_pairs_with_error.json"
     issues_by_trace = detect_issues_in_traces(json_file_path)
 
     for trace_id, issues in issues_by_trace.items():

@@ -41,7 +41,7 @@ Focused on understanding tracing and monitoring tools, collected traces for anal
 - Developed `large_http_payload_detector.py` to detect the Large HTTP Payload problem. 
 - I started digging deeper into traces. I wanted to mark traces with high latency, but I noticed that "high" is very different when working with different kind of spans. So started making fingerprints based on each `span.kind`.
 Using mean and standard deviation was useless because the std value was very high, indicating that there is a wide dispersion in the data, making it difficult to use mean ± std for anomaly detection.   
-- So, I made fingerprints using Median and Interquartile Range (IQR) method and implemented an anomaly detector that uses these fingerprints.
+- So, I made fingerprints using Median and Interquartile Range (IQR) method and implemented `anomaly_detector_with_fingerprints.py` that uses these fingerprints.
 - Developed `exception_trace_detector.py` to find traces that are countering an exception.
 - Developed `log_parser.py` in the `data_processing` subdirectory to make senses of the logs and the runtime information. The implemented function would monitor logs, label them with services, and one of the labels below, saved in .txt files. 
   - exception
@@ -50,3 +50,20 @@ Using mean and standard deviation was useless because the std value was very hig
   - 500 Internal Server Error
   - info 
   - other
+
+
+--- 
+## Day 5: Into Errors and Articles - Another Research Day! (June 25, 2024 - Tuesday)
+### Tasks Completed:
+- Developed `error_detector.py` that looks for error information in spans hierarchy. It has different approaches for http and non-http spans. And stores different error information based on the span kind. 
+- Did some research in the field of "anomaly detection in distributed tracing" and found amazing articles. 
+
+--- 
+## Day 6: Feature Engineering and Anomaly Detection (June 26, 2024 - Wednesday)
+### Tasks Completed:
+- Developed `feature_engineering.py` to extract feature from spans. I looked for common attributes of spans and key-value tags. 
+  
+  Encoded categorical features (like operation name and span kind) and looked to see whether a span is http or db type. 
+- Implemented an anomaly detector using IsolationForest. Printing out the corresponding traceID and spanID for anomalous samples.
+- Implemented an anomaly detector using LSTM Encoder and Reconstruction Error. 
+- Finalizing the readme.md file and presenting the results!

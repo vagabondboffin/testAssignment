@@ -1,4 +1,4 @@
-from base_detector import BaseDetector
+from performance_detector.detectors.base_detector import BaseDetector
 from performance_detector.data_processing.trace_elements import Trace, Span, Tag
 
 
@@ -24,7 +24,7 @@ class NPlusOneDetector(BaseDetector):
     def __init__(self):
         super().__init__()
 
-    def detect(self, trace: Trace) -> list:
+    def detect_n_plus_one_queries(self, trace: Trace) -> list:
         n_plus_one_issues = []
 
         # Find all db_spans in the trace
@@ -66,7 +66,6 @@ class NPlusOneDetector(BaseDetector):
         return sequences
 
     def are_similar_spans(self, span1: Span, span2: Span) -> bool:
-        # Define similarity between spans (customize as needed)
         return span1.operation_name == span2.operation_name
 
     def is_n_plus_one_issue(self, sequence: list, db_spans: list) -> bool:
@@ -89,10 +88,8 @@ class NPlusOneDetector(BaseDetector):
         return True
 
     def has_source_span(self, sequence: list, db_spans: list) -> bool:
-        # Check if there's a database span that precedes the repeating spans (source span)
         first_span = sequence[0]
         first_span_index = db_spans.index(first_span)
 
-        # Ensure there's at least one span before the sequence starts
         return first_span_index > 0
 

@@ -22,7 +22,7 @@ class LargeHttpPayloadDetector(BaseDetector):
         self.payload_size_threshold_kb = payload_size_threshold_kb
         self.duration_threshold_ms = duration_threshold_ms
 
-    def detect(self, trace):
+    def detect_large_http_payloads(self, trace):
         issues = []
         for span in trace.spans:
             if self._is_large_http_payload(span):
