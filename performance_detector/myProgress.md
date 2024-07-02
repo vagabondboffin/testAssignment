@@ -4,7 +4,6 @@
 
 ### Tasks Completed:
 - Environment setup 
-- Made API calls using the "Try it out" button.
 - Explored traces in the Jaeger UI related to the API calls.
 
 ### Summary:
